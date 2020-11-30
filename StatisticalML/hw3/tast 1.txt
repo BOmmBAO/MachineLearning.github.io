@@ -1,0 +1,48 @@
+1
+a
+degree 1：0.3843532873748282
+b
+degree 2：0.2167828381735796
+degree 3：0.10829708107016975
+degree 4：0.10653926885608336
+c 
+           train                       validation                      test                    
+fold1：
+2        0.22556753                   0.15048197            0.22028206830068742      
+3        0.08428286                   0.15048197            0.11179742139957746
+4        0.08414773                   0.10435305            0.11268232077846108
+fold2：
+2        0.1989927                    0.26645353             0.2292217385755652   
+3        0.08601135                   0.09440721             0.10875662754775296
+4        0.08603288                   0.09418586             0.1085676042605185
+fold3：
+2        0.20084105                   0.25867888            0.22443805339442496
+3        0.08881662                   0.08738739            0.10848132887128964
+4        0.08864758                   0.08900698            0.10951896935966333
+fold4：
+2        0.22494425                   0.16930346            0.21190796159995878
+3        0.09214729                   0.06459363            0.10969028524269515
+4        0.09073245                   0.07924134            0.10723300347728246
+
+fold5：
+2       0.19685787                    0.27953923           0.20534393067167173
+3       0.07978302                    0.1138868            0.10725099232824602
+4       0.07786331                    0.12530459           0.10461065723562771
+
+The result don't fit my expectations, think because 1.the divided data is not average 
+                                                    2. the noise disturbed the fitting and leads to overfitting 
+                                                    3. the number of test_data>train_data. 
+
+I think we should degree 3, because the difference between 3 and 4 is little and maybe the noise makes a bais.
+
+1d
+3)train :3.5386226788394106  test:4.588156582914009
+ 对数似然率
+4)  train： -31235.44383000205   test:-105117.53949070684
+6)linear regression is the fit of data point , but the bayesian is the fit of data distribution propability.
+
+1e
+1) train:4.573687487696011   test:12.294027090210921
+2)train:-52227.36075977815  test: -755577.1458182211         
+3) SE features regulize the X sample matrix
+   lambata = alpha/beta
